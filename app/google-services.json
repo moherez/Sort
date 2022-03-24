@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "72598087901",
+    "firebase_url": "https://sort-android-default-rtdb.firebaseio.com",
+    "project_id": "sort-android",
+    "storage_bucket": "sort-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72598087901:android:6f0fe1cd0b97215bea1334",
+        "android_client_info": {
+          "package_name": "com.Sort"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72598087901-pqrn7s4ljgbkade4ljp5214psbnu5rto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApXY4G5LCC6oYPS8dP6XOsnlI8CxzZkv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72598087901-pqrn7s4ljgbkade4ljp5214psbnu5rto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".Activitys.LoginAndSingup.login">
+
+    <ImageView
+
+        android:id="@+id/login_logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_64sdp"
+        android:layout_weight="7"
+        android:alpha="0.2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/login_username_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:background="@drawable/text_filed_background">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_username_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:hint="@string/username"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColorHint="#757575"
+                app:boxStrokeColor="@color/light_green"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintTextColor="#757575"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_verify"
+                app:endIconTint="@color/verify_color"
+                android:paddingRight="@dimen/_8sdp"
+                app:endIconCheckable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="textShortMessage"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/login_username_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:contentDescription="@string/username"
+                android:src="@drawable/ic_user" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_password_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:background="@drawable/text_filed_background_dark">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_password_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:hint="@string/password"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColorHint="#757575"
+                app:boxStrokeColor="@color/light_green"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintTextColor="#757575"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_verify"
+                app:endIconTint="@color/verify_color"
+                android:paddingRight="@dimen/_8sdp"
+                app:endIconCheckable="false"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="textPassword"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/login_password_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:contentDescription="@string/password"
+                android:src="@drawable/ic_password_dark" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/login_loding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_116sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_116sdp"
+            android:alpha="0"
+            android:contentDescription="@string/loding"
+            android:src="@drawable/loding" />
+
+    </LinearLayout>
+
+  </LinearLayout>

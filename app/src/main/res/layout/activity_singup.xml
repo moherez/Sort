@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".Activitys.LoginAndSingup.singup">
+
+    <ImageView
+
+        android:id="@+id/singup_logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_64sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_64sdp"
+        android:layout_weight="7"
+        android:alpha="0.2"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/singup_main_user_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/singup_email_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:background="@drawable/text_filed_background">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/singup_email_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:hint="@string/email"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColorHint="#757575"
+                app:boxStrokeColor="@color/light_green"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintTextColor="#757575">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_14sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/singup_email_icon"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:contentDescription="@string/email"
+                android:src="@drawable/ic_email" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/singup_username_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:background="@drawable/text_filed_background_dark">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/singup_username_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:hint="@string/username"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColorHint="#757575"
+                app:boxStrokeColor="@color/light_green"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintTextColor="#757575">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="textShortMessage"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_14sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/singup_username_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:contentDescription="@string/username"
+                android:src="@drawable/ic_user_dark" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/singup_password_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:background="@drawable/text_filed_background_dark">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/singup_password_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_54sdp"
+                android:hint="@string/password"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColorHint="#757575"
+                app:boxStrokeColor="@color/light_green"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:hintAnimationEnabled="false"
+                app:hintTextColor="#757575">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:inputType="textPassword"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_14sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/singup_password_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:contentDescription="@string/password"
+                android:src="@drawable/ic_password_dark" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/singup_singup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_68sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:backgroundTint="#BDBDBD"
+            android:fontFamily="@font/montserrat_bold"
+            android:letterSpacing="0"
+            android:paddingBottom="@dimen/_8sdp"
+            android:stateListAnimator="@null"
+            android:text="@string/sing_up"
+            android:textAllCaps="false"
+            android:textColor="#757575"
+            android:textSize="@dimen/_24ssp"
+            app:cornerRadius="@dimen/_12sdp"
+            android:clickable="false"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/singup_firesandlastname_relative_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/singup_firesandlastname_linear_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/singup_first_name_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72sdp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:alpha="0"
+                android:background="@drawable/text_filed_background_dark_2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/singup_first_name_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/first_name"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:textColorHint="#757575"
+                    app:boxStrokeColor="@color/light_green"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#757575">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:inputType="textShortMessage"
+                        android:textColor="#73BF6F"
+                        android:textSize="@dimen/_18sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/singup_last_name_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72sdp"
+                android:layout_marginLeft="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginRight="@dimen/_32sdp"
+                android:alpha="0"
+                android:background="@drawable/text_filed_background_dark_2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/singup_last_name_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/last_name"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:textColorHint="#757575"
+                    app:boxStrokeColor="@color/light_green"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="#757575">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:inputType="textShortMessage"
+                        android:textColor="#73BF6F"
+                        android:textSize="@dimen/_18sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </RelativeLayout>
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/singup_user_image"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginLeft="@dimen/_32sdp"
+            android:layout_marginRight="@dimen/_32sdp"
+            android:alpha="0"
+            android:visibility="gone"
+            android:contentDescription="@string/loding"
+            app:cardCornerRadius="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/singup_user_image_image"
+                android:src="@drawable/ic_userphoto"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="centerCrop" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+               <TextView
+                   android:id="@+id/singup_tv_add_photo"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/montserrat_semibold"
+                   android:text="@string/add_your_photo"
+                   android:textSize="@dimen/_24ssp"
+                   android:textColor="#4CAF50"
+                   android:layout_marginTop="@dimen/_8sdp"
+                   android:alpha="0"
+                   android:visibility="gone"
+                   android:gravity="center_horizontal"
+                   android:layout_marginBottom="@dimen/_164sdp"
+                   />
+
+
+
+            <ImageView
+                android:id="@+id/singup_loding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_116sdp"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:layout_marginRight="@dimen/_116sdp"
+                android:layout_marginBottom="@dimen/_200sdp"
+                android:alpha="0"
+                android:contentDescription="@string/loding"
+                android:src="@drawable/loding" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/singup_overview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:alpha="0"
+                    android:id="@+id/singup_end_user_image"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_48sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:layout_marginBottom="@dimen/_32sdp"
+                    android:contentDescription="@string/loding"
+                    app:cardCornerRadius="@dimen/_200sdp"
+                    app:strokeColor="@color/light_green"
+                    >
+
+                    <ImageView
+                        android:id="@+id/singup_end_user_image_image"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_160sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_userphoto" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_name_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background_dark_2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_name_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/name"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textShortMessage"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_username_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background_dark_2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_username_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/username"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textShortMessage"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_email_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background_dark_2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_email_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/email"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textEmailAddress"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_password_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background_dark_2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_password_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/password"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textPassword"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_company_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_company_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/company"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_company"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textShortMessage"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:alpha="0"
+                    android:id="@+id/singup_end_description_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_86sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:background="@drawable/text_filed_background">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/singup_end_description_layout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/description"
+                        android:paddingLeft="@dimen/_14sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:textColorHint="#757575"
+                        app:boxStrokeColor="@color/light_green"
+                        app:boxStrokeWidth="0dp"
+                        app:boxStrokeWidthFocused="0dp"
+                        app:hintAnimationEnabled="false"
+                        app:hintTextColor="#757575">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/_singup_end_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:inputType="textLongMessage"
+                            android:textColor="#757575"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/singup_done"
+                    android:text="@string/done"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_68sdp"
+                    android:layout_marginLeft="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_32sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_24sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:backgroundTint="#73BF6F"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textAllCaps="false"
+                    android:textColor="#F7F7F7"
+                    android:textSize="@dimen/_24ssp"
+                    app:cornerRadius="@dimen/_12sdp"
+                    android:stateListAnimator="@null"
+                    android:letterSpacing="0"
+                    android:alpha= "0.0" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+ </LinearLayout>

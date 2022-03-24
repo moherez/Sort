@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+    <ImageView
+        android:id="@+id/internet_dialog_internet_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_124sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginRight="@dimen/_80sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:src="@drawable/internet_dialog_icon"
+        android:layout_alignParentTop="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/internet_dialog_internet_icon"
+            android:layout_marginRight="@dimen/_24sdp"
+            android:layout_marginLeft="@dimen/_24sdp">
+
+
+
+
+            <TextView
+                android:id="@+id/internet_dialog_internet_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/no_internet_connection"
+                android:textColor="#4DAF4F"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:paddingBottom="@dimen/_16sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="You are not connected to the internet."
+                android:textColor="#757575"
+                android:textSize="@dimen/_10ssp"
+                android:paddingBottom="@dimen/_2sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="Make sure Wi-Fi is on, Airplane Mode is off"
+                android:textColor="#757575"
+                android:textSize="@dimen/_10ssp"
+                android:paddingBottom="@dimen/_2sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center_horizontal"
+                android:text="and try again."
+                android:textColor="#757575"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_40sdp"
+                />
+
+            <ImageView
+                android:id="@+id/internet_dialog_internet_loding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:src="@drawable/loding"
+                android:layout_marginRight="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/internet_dialog_retry_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#F7F7F7"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="@dimen/_12ssp"
+                android:stateListAnimator="@null"
+                android:text="@string/retry"
+                android:textAllCaps="false"
+                android:textColor="#4DAF4F"
+                app:cornerRadius="@dimen/_100sdp"
+                app:strokeColor="#4DAF4F"
+                app:strokeWidth="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_48sdp"
+                android:layout_marginRight="@dimen/_48sdp"
+
+                />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

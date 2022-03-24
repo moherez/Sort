@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Activitys.Home.Home">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/home_coordinatorlayout_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/home_bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_toolbar" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:textAlignment="center"
+        android:textDirection="ltr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/buttom_navigation"
+        android:theme="@style/Widget.BottomNavigationView"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        app:itemIconTint="@drawable/background_icon_bottom_navigation"
+        app:itemTextColor="@drawable/background_icon_bottom_navigation"
+
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/new_workplace_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/home_coordinatorlayout_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_8sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/home_profile_image"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_userphoto"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/new_workplace_toolbar_textview_title"
+                android:text="@string/workplaces"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="#212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_4sdp"
+                android:layout_toRightOf="@id/home_profile_image" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/add_project_icon"
+                android:layout_toLeftOf="@id/add_work"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:visibility="gone"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/add_work"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/add_workplace_icon"
+                android:layout_marginRight="@dimen/_16sdp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#9A000000"
+        app:layout_constraintBottom_toBottomOf="@+id/home_coordinatorlayout_main"
+        app:layout_constraintTop_toTopOf="@+id/new_workplace_toolbar"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/workplace_detalis_workplace_white_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/internet_dialog_internet_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_120sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/ic_verify_your_email_address" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/internet_dialog_internet_icon"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/internet_dialog_internet_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:text="Verify your email addressn"
+                    android:textColor="#4DAF4F"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="Verify your email first to be able to join"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_10ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:text="Workplaces or create projects."
+                    android:textColor="#757575"
+                    android:textSize="@dimen/_10ssp" />
+
+
+                <ImageView
+                    android:id="@+id/internet_dialog_internet_loding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_90sdp"
+                    android:layout_marginRight="@dimen/_90sdp"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/loding"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/internet_dialog_retry_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_21sdp"
+                    android:backgroundTint="#B04CAF50"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0"
+                    android:stateListAnimator="@null"
+                    android:text="Open Gmail"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_background"
+                    android:textSize="@dimen/_14ssp"
+                    app:cornerRadius="@dimen/_100sdp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_24sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_21sdp"
+                    android:layout_marginBottom="@dimen/_32sdp"
+                    android:backgroundTint="#41BDBDBD"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:letterSpacing="0"
+                    android:stateListAnimator="@null"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#D2757575"
+                    android:textSize="@dimen/_14ssp"
+                    app:cornerRadius="@dimen/_100sdp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

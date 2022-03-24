@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_background"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_68sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:backgroundTint="#DCEDC8"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0"
+                android:paddingBottom="@dimen/_4sdp"
+                android:stateListAnimator="@null"
+                android:text="Create a workplace"
+                android:textAllCaps="false"
+                android:textColor="#82AA53"
+                android:textSize="@dimen/_18ssp"
+                app:cornerRadius="@dimen/_12sdp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_68sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:backgroundTint="#DCEDC8"
+                android:fontFamily="@font/montserrat_bold"
+                android:letterSpacing="0"
+                android:paddingBottom="@dimen/_4sdp"
+                android:stateListAnimator="@null"
+                android:text="Join a workplace"
+                android:textAllCaps="false"
+                android:textColor="#82AA53"
+                android:textSize="@dimen/_18ssp"
+                app:cornerRadius="@dimen/_12sdp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

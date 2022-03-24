@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Sort">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Home">
+
+
+        <activity android:name=".Activitys.Workplace.JoinWorkplace"/>
+        <activity android:name=".Activitys.Profile.Profile"/>
+        <activity android:name=".Activitys.Task.CreateTask" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activitys.Project.Project" android:theme="@style/Theme.ProjectDetails"/>
+        <activity android:name=".Activitys.Project.CreateProject" />
+
+        <activity android:name=".Activitys.Project.ProjectDetails" android:theme="@style/Theme.ProjectDetails"/>
+
+        <activity android:name=".Activitys.Workplace.CreateWorkplace"/>
+        <activity android:name=".Activitys.Workplace.WorkplaceDetails" />
+
+        <!-- Splach -->
+        <activity
+            android:name=".Activitys.Splach.SplachActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeOverlay.Sort.FullscreenContainer"/>
+        <!-- Login And Singup -->
+        <activity
+            android:name=".Activitys.LoginAndSingup.singup"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sort.singupscreen" />
+        <activity
+            android:name=".Activitys.LoginAndSingup.login"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sort.singupscreen" /> <!-- Home -->
+        <activity
+            android:name=".Activitys.Home.Home"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Home"></activity>
+    </application>
+
+</manifest>

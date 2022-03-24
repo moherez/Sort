@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Activitys.Home.HomeFragments.WorkplacesFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/workplace_detalis_workplace_white_background"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/conss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/workplaces_edittext_serach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@drawable/serach_edittext_background"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:hint="Search .."
+                    android:inputType="textShortMessage"
+                    android:paddingLeft="@dimen/_16sdp"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:textColor="#636363"
+                    android:textColorHint="#757575"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_132sdp"
+                    android:backgroundTint="#DCEDC8"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:letterSpacing="0"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:stateListAnimator="@null"
+                    android:text="Add a workplace"
+                    android:textAllCaps="false"
+                    android:textColor="#82AA53"
+                    android:textSize="@dimen/_18ssp"
+                    app:cornerRadius="@dimen/_12sdp"
+                    app:layout_constraintTop_toBottomOf="@+id/workplaces_edittext_serach"
+                    tools:layout_editor_absoluteX="18dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="42dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/new_workplace_lineview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/workplaces_edittext_serach" />
+
+                <View
+                    android:id="@+id/new_workplace_lineview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="@dimen/_80sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:layout_marginRight="@dimen/_80sdp"
+                    android:alpha="0.4"
+                    android:background="#757575"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_68sdp"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:backgroundTint="#DCEDC8"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:letterSpacing="0"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:stateListAnimator="@null"
+                    android:text="Add a workplace"
+                    android:textAllCaps="false"
+                    android:textColor="#82AA53"
+                    android:textSize="@dimen/_18ssp"
+                    android:visibility="gone"
+                    app:cornerRadius="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_workplace_lineview" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_68sdp"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:backgroundTint="#DCEDC8"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:letterSpacing="0"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:stateListAnimator="@null"
+                    android:text="Add a new project"
+                    android:textAllCaps="false"
+                    android:textColor="#82AA53"
+                    android:textSize="@dimen/_18ssp"
+                    android:visibility="gone"
+                    app:cornerRadius="@dimen/_12sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

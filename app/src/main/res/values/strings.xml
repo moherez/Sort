@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Sort</string>
+    <string name="title_activity_splach">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sing_up">Sing up</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loding">loding</string>
+    <string name="first_name">First name..</string>
+    <string name="last_name">Last name..</string>
+    <string name="add_your_photo">Add your photo</string>
+    <string name="company">Company</string>
+    <string name="description">Description..</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="verify">Verify</string>
+    <string name="we_have_sent_a_message_verifying_your_email">We have sent a message verifying your email</string>
+    <string name="please_verify_your_email_to_continue">Please verify your email to continue ..</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="workplaces">Workplaces</string>
+    <string name="notifications">Notifications</string>
+    <string name="search">Search..</string>
+    <string name="new_workplace">New workplace</string>
+    <string name="workplace_code_info">The "workplace code" is a unique text of a set of numbers and letters specific to the workplace.</string>
+    <string name="join_workplace">Join a workplace</string>
+
+    </resources>

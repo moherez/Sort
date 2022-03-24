@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splach_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Activitys.Splach.SplachActivity"
+    tools:visibility="visible">
+
+
+
+        <RelativeLayout
+            android:id="@+id/spalash_bakground_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DCEDC8"/>
+    <ImageView
+        android:id="@+id/splach_logo_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_64sdp"
+        android:layout_marginLeft="@dimen/_64sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_220sdp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/splach_loding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_116sdp"
+        android:layout_marginLeft="@dimen/_116sdp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/splach_logo_image"
+        android:layout_marginBottom="@dimen/_220sdp"
+        android:src="@drawable/loding"
+        android:contentDescription="@string/loding" />
+
+    <Button
+        android:id="@+id/splach_singup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:backgroundTint="#73BF6F"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/sing_up"
+        android:textAllCaps="false"
+        android:textColor="#F7F7F7"
+        android:textSize="@dimen/_24ssp"
+        app:cornerRadius="@dimen/_12sdp"
+        android:stateListAnimator="@null"
+        android:letterSpacing="0"
+        android:alpha= "0.0"/>
+
+
+    <Button
+        android:id="@+id/splach_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68sdp"
+        android:layout_above="@id/splach_singup"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:backgroundTint="#DCEDC8"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#689F38"
+        android:textSize="@dimen/_24ssp"
+        app:cornerRadius="@dimen/_12sdp"
+        android:stateListAnimator="@null"
+        android:letterSpacing="0"
+        android:alpha= "0.0"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/splach_loding_fram1"
+          android:duration="200" />
+
+    <item android:drawable="@drawable/splach_loding_fram2"
+        android:duration="100" />
+
+    <item android:drawable="@drawable/splach_loding_fram3"
+        android:duration="300" />
+
+    <item android:drawable="@drawable/splach_loding_fram4"
+        android:duration="200" />
+
+
+    <item android:drawable="@drawable/splach_loding_fram5"
+        android:duration="100" />
+
+
+    <item android:drawable="@drawable/splach_loding_fram6"
+        android:duration="300" />
+
+</animation-list>

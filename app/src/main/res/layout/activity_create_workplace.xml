@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".Activitys.Workplace.CreateWorkplace">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/new_workplace_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_background"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/home_coordinatorlayout_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/new_workplace_toolbar_back_icon"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/new_workplace_toolbar_textview_title"
+                android:text="@string/new_workplace"
+                android:textSize="@dimen/_18ssp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="#212121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingTop="@dimen/_18sdp"
+                android:paddingLeft="@dimen/_16sdp"
+                android:layout_toRightOf="@id/new_workplace_toolbar_back_icon"/>
+
+
+            <TextView
+                android:id="@+id/new_workplace_toolbar_textview_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="next"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/new_workplace_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Name.."
+        android:inputType="textShortMessage"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:textColor="#757575"
+        android:textColorHint="#757575"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_toolbar" />
+
+    <EditText
+
+        android:id="@+id/new_workplace_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Company.."
+        android:inputType="textShortMessage"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:textColor="#757575"
+        android:textColorHint="#757575"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_name" />
+
+    <EditText
+
+        android:id="@+id/new_workplace_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_164sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="top"
+        android:hint="Description.."
+        android:inputType="textLongMessage|textMultiLine"
+        android:isScrollContainer="true"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:singleLine="false"
+        android:textColor="#757575"
+        android:textColorHint="#757575"
+        android:textSize="@dimen/_16ssp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_company" />
+
+
+    <EditText
+        android:id="@+id/new_workplace_serach_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/serach_edittext_background"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Search .."
+        android:inputType="textShortMessage"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingTop="@dimen/_14sdp"
+        android:paddingRight="@dimen/_14sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="#636363"
+        android:textColorHint="#757575"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_toolbar"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/new_workplace_main_realtive_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        app:layout_constraintBottom_toTopOf="@+id/new_workplace_lineview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_workplace_serach_edittext"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/new_workplace_main_realtive_layout_empty_users_tv"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Search for people using
+the username.."
+            android:textSize="@dimen/_14ssp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/new_workplace_copy_workplace_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="@font/montserrat_bold"
+        android:letterSpacing="0"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:stateListAnimator="@null"
+        android:text="Cope workplace code"
+        android:textAllCaps="false"
+        android:textColor="#F7F7F7"
+        android:textSize="@dimen/_16ssp"
+        app:cornerRadius="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/new_workplace_lineview"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/new_workplace_copy_workplace_code_button"
+        tools:layout_editor_absoluteX="42dp"
+        android:layout_marginRight="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_80sdp"
+        android:alpha="0.4"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
